@@ -16,22 +16,18 @@ import * as natural from 'natural'; // For Natural Language Processing
 
 export class DockerDeveloperNode implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'Advanced Docker Developer Environment',
-        name: 'dockerDeveloperNode',
+        displayName: 'Advanced Docker AI Machine',
+        name: 'dockerAIMachine',
         group: ['development'],
         version: 1,
         description:
-            'Manage Docker containers for AI agents with advanced features including interactive shell access, context awareness, and more',
+            'Allow AI agents to control a Docker container with advanced features including interactive shell access, context awareness, and more',
         defaults: {
-            name: 'Advanced Docker Dev',
+            name: 'Advanced Docker AI Machine',
         },
         inputs: ['main'],
         outputs: ['main'],
         credentials: [
-            {
-                name: 'dockerApi',
-                required: true,
-            },
         ],
         properties: [
             // Operation Selection

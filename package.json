@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-docker-ai-machine",
   "version": "0.1.0",
-  "description": "",
+  "description": "A controllable Docker setup for A.I. driven workflows in n8n",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "The Ape Machine",
+    "email": "theapemachine@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/theapemachine/n8n-nodes-docker-ai-machine.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -45,6 +45,9 @@
     ]
   },
   "devDependencies": {
+    "@types/dockerode": "^3.3.31",
+    "@types/tar-fs": "^2.0.4",
+    "@types/ws": "^8.5.12",
     "@typescript-eslint/parser": "^7.15.0",
     "eslint": "^8.56.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
@@ -55,5 +58,11 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "dockerode": "^4.0.2",
+    "natural": "^8.0.1",
+    "tar-fs": "^3.0.6",
+    "ws": "^8.18.0"
   }
 }
